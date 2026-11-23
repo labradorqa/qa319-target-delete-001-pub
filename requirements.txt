@@ -38,3 +38,9 @@ paramiko==2.4.1
 
 # lxml 4.6.2 — XXE / billion laughs
 lxml==4.6.2
+
+# ── branch-a 추가 취약점 (main 대비 증분) ──
+numpy==1.16.0        # CVE-2019-6446 (pickle 역직렬화 RCE)
+PyJWT==1.5.0         # CVE-2017-11424 (인증 우회)
+Twisted==18.9.0      # CVE-2019-12387 (HTTP 프록시)
+ansible==2.7.0       # 다수 CVE (템플릿 인젝션 등)
